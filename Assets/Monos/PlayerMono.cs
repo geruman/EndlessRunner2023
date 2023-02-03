@@ -21,13 +21,16 @@ public class PlayerMono : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RaycastHit2D rayCastSuelo = Physics2D.Raycast(transform.position, Vector2.down, 0.5f, layerSuelo);
-
+        RaycastHit2D rayCastSuelo = Physics2D.Raycast(transform.position, Vector2.down, 1f, layerSuelo);
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            Debug.Log("UP UP");
+            Debug.Log(rayCastSuelo);
+        }
         if (rayCastSuelo==true)
         {
             TouchGround();
             CheckJump();
-
         }
         else
         {
@@ -89,6 +92,7 @@ public class PlayerMono : MonoBehaviour
 
     private void TouchGround()
     {
+        Debug.Log("TouchGround");
         animator.SetBool("isJumping", false);
         animator.SetBool("isGoingDown", false);
         animator.SetBool("isDoubleJumping", false);
@@ -112,6 +116,7 @@ public class PlayerMono : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow)&&!animator.GetBool("isJumping"))
         {
+            Debug.Log("Jump!");
             animator.SetBool("isJumping", true);
             rb.velocity = new Vector2(0, 9);
         }

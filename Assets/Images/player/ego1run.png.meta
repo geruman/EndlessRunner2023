@@ -1,16 +1,31 @@
 fileFormatVersion: 2
-guid: 83c066596f7fe444f90d32d8619c97bf
+guid: 6214ef1495af8b5408cc93fc30986091
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8417215877007683683
-    second: guy_jump_0
+      213: 4426522459418566350
+    second: ego1run_0
   - first:
-      213: 6043446228609875560
-    second: guy_jump_1
+      213: -1828622367750401344
+    second: ego1run_1
   - first:
-      213: -6306710289289696711
-    second: guy_jump_2
+      213: 2953200082363751474
+    second: ego1run_2
+  - first:
+      213: 8378135879227662364
+    second: ego1run_3
+  - first:
+      213: 7035078369456762226
+    second: ego1run_4
+  - first:
+      213: 6674361435767309930
+    second: ego1run_5
+  - first:
+      213: -6585198256288718413
+    second: ego1run_6
+  - first:
+      213: 2131495366112567633
+    second: ego1run_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -55,7 +70,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -124,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guy_jump_0
+      name: ego1run_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +153,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36032da6e35ffc470800000000000000
-      internalID: 8417215877007683683
+      spriteID: ece9eef59ba2e6d30800000000000000
+      internalID: 4426522459418566350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guy_jump_1
+      name: ego1run_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c257ed15ad6f96e0800000000000000
+      internalID: -1828622367750401344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ego1run_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 64
-        height: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86e377b4352aed350800000000000000
-      internalID: 6043446228609875560
+      spriteID: 23c12f304dfdbf820800000000000000
+      internalID: 2953200082363751474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guy_jump_2
+      name: ego1run_3
       rect:
         serializedVersion: 2
-        x: 128
+        x: 96
         y: 0
-        width: 64
-        height: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +216,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93a269108601a78a0800000000000000
-      internalID: -6306710289289696711
+      spriteID: c10e151613e154470800000000000000
+      internalID: 8378135879227662364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ego1run_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d218ae08e91a160800000000000000
+      internalID: 7035078369456762226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ego1run_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a660a711d5810ac50800000000000000
+      internalID: 6674361435767309930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ego1run_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1a366631dac94a0800000000000000
+      internalID: -6585198256288718413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ego1run_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151e7890eb7949d10800000000000000
+      internalID: 2131495366112567633
       vertices: []
       indices: 
       edges: []

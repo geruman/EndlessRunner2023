@@ -22,11 +22,6 @@ public class PlayerMono : MonoBehaviour
     void Update()
     {
         RaycastHit2D rayCastSuelo = Physics2D.Raycast(transform.position, Vector2.down, 1f, layerSuelo);
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            Debug.Log("UP UP");
-            Debug.Log(rayCastSuelo);
-        }
         if (rayCastSuelo==true)
         {
             TouchGround();
@@ -48,11 +43,11 @@ public class PlayerMono : MonoBehaviour
 
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer==7&&!invincible)
         {
-            if(collision.gameObject.tag == "PushUp")
+            if (collision.gameObject.tag == "PushUp")
             {
                 this.transform.position = new Vector2(transform.position.x, transform.position.y+0.5f);
             }

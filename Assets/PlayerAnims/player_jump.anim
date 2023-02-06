@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: guy_gone
+  m_Name: player_jump
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 1521654491398192142, guid: db26028d32525a548b8f30847d8746f2, type: 3}
+      value: {fileID: 7314417071406376335, guid: 59cf8c6b9ebf83c4e81f300982bb9cb0, type: 3}
     - time: 0.083333336
-      value: {fileID: 3981731288805356623, guid: db26028d32525a548b8f30847d8746f2, type: 3}
+      value: {fileID: 3553035830802237007, guid: 59cf8c6b9ebf83c4e81f300982bb9cb0, type: 3}
     - time: 0.16666667
-      value: {fileID: 266549597027680156, guid: db26028d32525a548b8f30847d8746f2, type: 3}
+      value: {fileID: 1050840592122961248, guid: 59cf8c6b9ebf83c4e81f300982bb9cb0, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,9 +44,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 1521654491398192142, guid: db26028d32525a548b8f30847d8746f2, type: 3}
-    - {fileID: 3981731288805356623, guid: db26028d32525a548b8f30847d8746f2, type: 3}
-    - {fileID: 266549597027680156, guid: db26028d32525a548b8f30847d8746f2, type: 3}
+    - {fileID: 7314417071406376335, guid: 59cf8c6b9ebf83c4e81f300982bb9cb0, type: 3}
+    - {fileID: 3553035830802237007, guid: 59cf8c6b9ebf83c4e81f300982bb9cb0, type: 3}
+    - {fileID: 1050840592122961248, guid: 59cf8c6b9ebf83c4e81f300982bb9cb0, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

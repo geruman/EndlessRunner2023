@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObstacleMovementMono : MonoBehaviour
 {
-    public int speed = 6;
+    [SerializeField] SpeedData obstacleSpeedData;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +14,6 @@ public class ObstacleMovementMono : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector2(transform.position.x-speed*Time.deltaTime, transform.position.y);
+        transform.position = new Vector2(transform.position.x-obstacleSpeedData.speed*Time.deltaTime, transform.position.y);
     }
 }

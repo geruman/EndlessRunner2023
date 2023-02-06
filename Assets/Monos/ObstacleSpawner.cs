@@ -49,7 +49,7 @@ public class ObstacleSpawner : MonoBehaviour
                         break;
                     case 4:
                         go = Instantiate(obstacle4);
-                        go.transform.position = new Vector2(transform.position.x, transform.position.y+0.3f);
+                        go.transform.position = new Vector2(transform.position.x, transform.position.y+1f);
                         break;
 
                 }

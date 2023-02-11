@@ -12,8 +12,8 @@ public class ObstacleMovementMono : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        transform.position = new Vector2(transform.position.x-obstacleSpeedData.speed*Time.deltaTime, transform.position.y);
+        transform.position = new Vector2(transform.position.x-obstacleSpeedData.speed*Time.fixedDeltaTime, transform.position.y);
     }
 }

@@ -16,7 +16,10 @@ public class PlayerMono : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        animator.SetBool("isJumping", true);
+        
     }
+   
 
     // Update is called once per frame
     void Update()
@@ -87,7 +90,6 @@ public class PlayerMono : MonoBehaviour
 
     private void TouchGround()
     {
-        Debug.Log("TouchGround");
         animator.SetBool("isJumping", false);
         animator.SetBool("isGoingDown", false);
         animator.SetBool("isDoubleJumping", false);
@@ -111,7 +113,7 @@ public class PlayerMono : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow)&&!animator.GetBool("isJumping"))
         {
-            Debug.Log("Jump!");
+            
             animator.SetBool("isJumping", true);
             rb.velocity = new Vector2(0, 9);
         }
@@ -119,5 +121,16 @@ public class PlayerMono : MonoBehaviour
     public void LoadGameOver()
     {
         SceneManager.LoadScene(2);
+    }
+    private void OnApplicationFocus(bool focus)
+    {
+        if (focus)
+        {
+            Time.timeScale = 1;
+        }
+        else
+        {
+            Time.timeScale = 0;
+        }
     }
 }

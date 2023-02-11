@@ -9,9 +9,18 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] GameObject obstacle2;
     [SerializeField] GameObject obstacle3;
     [SerializeField] GameObject obstacle4;
+    [SerializeField] GameObject obstacle5;
+    [SerializeField] GameObject obstacle6;
+    [SerializeField] GameObject obstacle7;
+    [SerializeField] GameObject obstacle8;
     [SerializeField][Range(0, 20)] float difference;
     private Queue<int> nextSpawn;
     // Start is called before the first frame update
+    private ObstacleFactory obstacleFactory;
+    private void Awake()
+    {
+        obstacleFactory = GetComponent<ObstacleFactory>();
+    }
     void Start()
     {
         timeTillSpawn = 0;
@@ -27,7 +36,8 @@ public class ObstacleSpawner : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (timeTillSpawn <= 0)
+        //if (timeTillSpawn <= 0)
+        if (true)
         {
             if (nextSpawn.Count>0)
             {
@@ -36,20 +46,35 @@ public class ObstacleSpawner : MonoBehaviour
                 switch (nextSpawn.Dequeue())
                 {
                     case 1:
-                        go = Instantiate(obstacle1);
-                        go.transform.position = new Vector2(transform.position.x, transform.position.y+1.3f);
+                        
+                        obstacleFactory.CreateObstacleCluster1At(transform);
                         break;
                     case 2:
-                        go = Instantiate(obstacle2);
-                        go.transform.position = new Vector2(transform.position.x+10, transform.position.y+2.3f);
+                        obstacleFactory.CreateObstacleCluster2At(transform);
                         break;
                     case 3:
                         go = Instantiate(obstacle3);
-                        go.transform.position = new Vector2(transform.position.x, transform.position.y+3f);
+                        go.transform.position = new Vector2(transform.position.x, transform.position.y);
                         break;
                     case 4:
                         go = Instantiate(obstacle4);
-                        go.transform.position = new Vector2(transform.position.x, transform.position.y+1f);
+                        go.transform.position = new Vector2(transform.position.x, transform.position.y);
+                        break;
+                    case 5:
+                        go = Instantiate(obstacle5);
+                        go.transform.position = new Vector2(transform.position.x, transform.position.y);
+                        break;
+                    case 6:
+                        go = Instantiate(obstacle6);
+                        go.transform.position = new Vector2(transform.position.x, transform.position.y);
+                        break;
+                    case 7:
+                        go = Instantiate(obstacle7);
+                        go.transform.position = new Vector2(transform.position.x, transform.position.y);
+                        break;
+                    case 8:
+                        go = Instantiate(obstacle8);
+                        go.transform.position = new Vector2(transform.position.x, transform.position.y);
                         break;
 
                 }
@@ -79,6 +104,22 @@ public class ObstacleSpawner : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             SelectForQueue(4);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            SelectForQueue(5);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            SelectForQueue(6);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            SelectForQueue(7);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            SelectForQueue(8);
         }
     }
 

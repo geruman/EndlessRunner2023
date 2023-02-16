@@ -1395,6 +1395,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   invincible: 0
+  _playerData: {fileID: 11400000, guid: ec63949b379d56c4bbeaa425a1fb0c7c, type: 2}
 --- !u!1 &1810674172
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,8 +1461,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f595be02bae47740a9621d04e1ceeec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleCluster1: {fileID: 7546098617380252084, guid: d542fd8d60a6b6042a2e2eae442e4bea, type: 3}
-  obstacleCluster2: {fileID: 7546098617380252084, guid: 8b673cc367f857043b75ca260a2b73b7, type: 3}
+  obstacleClusters:
+  - {fileID: 7546098617380252084, guid: d542fd8d60a6b6042a2e2eae442e4bea, type: 3}
+  - {fileID: 7546098617380252084, guid: 8b673cc367f857043b75ca260a2b73b7, type: 3}
+  - {fileID: 7546098617380252084, guid: 689b560a020726046bae551aa7fad2b7, type: 3}
+  - {fileID: 7546098617380252084, guid: f4170e4b79783c643975924d214cbe63, type: 3}
+  - {fileID: 7546098617380252084, guid: e5193da762ebb1b48a4fa6b096130610, type: 3}
+  - {fileID: 7546098617380252084, guid: 24bb2693137e5c34c82c3c9b88319699, type: 3}
 --- !u!1001 &2408439182725051310
 PrefabInstance:
   m_ObjectHideFlags: 0

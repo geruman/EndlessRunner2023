@@ -6,22 +6,18 @@ using UnityEngine;
 /// </summary>
 public class ObstacleFactory:MonoBehaviour
 {
-    [SerializeField] GameObject obstacleCluster1;
-    [SerializeField] GameObject obstacleCluster2;
+    [SerializeField] GameObject[] obstacleClusters;
+    
 
     void Awake()
     {
         
     }
-    public void CreateObstacleCluster1At(Transform parentTransform)
+    public void CreateObstacleClusterXAt(int index, Transform parentTransform)
     {
-        Instantiate(obstacleCluster1, parentTransform);
+        Instantiate(obstacleClusters[index], parentTransform);
     }
 
-    public void CreateObstacleCluster2At(Transform parentTransform)
-    {
-        Instantiate(obstacleCluster2, parentTransform);
-    }
 
 
 

@@ -9,15 +9,13 @@ public class PlayerMono : MonoBehaviour
     [SerializeField] private LayerMask layerSuelo;
     [SerializeField] private LayerMask layerObstaculo;
     [SerializeField] private bool invincible;
-
+    [SerializeField] private PlayerData _playerData;
     bool canDoubleJump;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        animator.SetBool("isJumping", true);
-        
+        animator = GetComponent<Animator>();        
     }
    
 
@@ -50,10 +48,6 @@ public class PlayerMono : MonoBehaviour
     {
         if (collision.gameObject.layer==7&&!invincible)
         {
-            if (collision.gameObject.tag == "PushUp")
-            {
-                this.transform.position = new Vector2(transform.position.x, transform.position.y+0.5f);
-            }
             animator.SetBool("pepsi", true);
         }
 
@@ -72,7 +66,7 @@ public class PlayerMono : MonoBehaviour
         if (Input.GetKey(KeyCode.DownArrow)&&!animator.GetBool("isGoingDown"))
         {
             animator.SetBool("isGoingDown", true);
-            rb.velocity = new Vector2(0, -7);
+            rb.velocity = new Vector2(0, _playerData.goingDownForce);
             canDoubleJump = false;
 
         }
@@ -104,7 +98,7 @@ public class PlayerMono : MonoBehaviour
             animator.SetBool("isGoingDown", false);
             animator.SetBool("isFallingFromJump", false);
             animator.SetBool("isDoubleJumping", true);
-            rb.velocity = new Vector2(0, 7);
+            rb.velocity = new Vector2(0, _playerData.doubleJumpForce);
             canDoubleJump=false;
         }
     }
@@ -115,7 +109,7 @@ public class PlayerMono : MonoBehaviour
         {
             
             animator.SetBool("isJumping", true);
-            rb.velocity = new Vector2(0, 9);
+            rb.velocity = new Vector2(0, _playerData.jumpForce);
         }
     }
     public void LoadGameOver()

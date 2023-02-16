@@ -46,27 +46,23 @@ public class ObstacleSpawner : MonoBehaviour
                 switch (nextSpawn.Dequeue())
                 {
                     case 1:
-                        
-                        obstacleFactory.CreateObstacleCluster1At(transform);
+
+                        obstacleFactory.CreateObstacleClusterXAt(0, transform);
                         break;
                     case 2:
-                        obstacleFactory.CreateObstacleCluster2At(transform);
+                        obstacleFactory.CreateObstacleClusterXAt(1, transform);
                         break;
                     case 3:
-                        go = Instantiate(obstacle3);
-                        go.transform.position = new Vector2(transform.position.x, transform.position.y);
+                        obstacleFactory.CreateObstacleClusterXAt(2, transform);
                         break;
                     case 4:
-                        go = Instantiate(obstacle4);
-                        go.transform.position = new Vector2(transform.position.x, transform.position.y);
+                        obstacleFactory.CreateObstacleClusterXAt(3, transform);
                         break;
                     case 5:
-                        go = Instantiate(obstacle5);
-                        go.transform.position = new Vector2(transform.position.x, transform.position.y);
+                        obstacleFactory.CreateObstacleClusterXAt(4, transform);
                         break;
                     case 6:
-                        go = Instantiate(obstacle6);
-                        go.transform.position = new Vector2(transform.position.x, transform.position.y);
+                        obstacleFactory.CreateObstacleClusterXAt(5, transform);
                         break;
                     case 7:
                         go = Instantiate(obstacle7);

@@ -1,19 +1,37 @@
 fileFormatVersion: 2
-guid: 0c912a2b01ab4ab499e6123c14b7f742
+guid: 0dcceedadee651b44b7a38d335f9ce24
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -598439394542342459
-    second: guy_double_jump_0
+      213: -3974785570232806141
+    second: muerte2_0
   - first:
-      213: -8166282198759301544
-    second: guy_double_jump_1
+      213: -8703061916578836411
+    second: muerte2_1
   - first:
-      213: -4598400614604406887
-    second: guy_double_jump_2
+      213: 4412714053509222803
+    second: muerte2_2
   - first:
-      213: 4899026982026816888
-    second: guy_double_jump_3
+      213: 1316987296136901438
+    second: muerte2_3
+  - first:
+      213: 8318189335156006162
+    second: muerte2_4
+  - first:
+      213: -7383710665747291626
+    second: muerte2_5
+  - first:
+      213: 1583292166129881846
+    second: muerte2_6
+  - first:
+      213: 3744479737857274892
+    second: muerte2_7
+  - first:
+      213: -7385156226076777288
+    second: muerte2_8
+  - first:
+      213: -1929213437643243625
+    second: muerte2_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +76,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guy_double_jump_0
+      name: muerte2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ce24b49a8ae1b7f0800000000000000
-      internalID: -598439394542342459
+      spriteID: 305dceb4599b6d8c0800000000000000
+      internalID: -3974785570232806141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guy_double_jump_1
+      name: muerte2_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 48
         y: 0
-        width: 64
-        height: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85e1b576b998bae80800000000000000
-      internalID: -8166282198759301544
+      spriteID: 54096143c43883780800000000000000
+      internalID: -8703061916578836411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guy_double_jump_2
+      name: muerte2_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 96
         y: 0
-        width: 64
-        height: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +201,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99ff09f11033f20c0800000000000000
-      internalID: -4598400614604406887
+      spriteID: 3919ac65d0c1d3d30800000000000000
+      internalID: 4412714053509222803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guy_double_jump_3
+      name: muerte2_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3331f7d7f0e64210800000000000000
+      internalID: 1316987296136901438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte2_4
       rect:
         serializedVersion: 2
         x: 192
         y: 0
-        width: 64
-        height: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,8 +243,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87d23c08517dcf340800000000000000
-      internalID: 4899026982026816888
+      spriteID: 21d9a60f025207370800000000000000
+      internalID: 8318189335156006162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte2_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612aed3254ac78990800000000000000
+      internalID: -7383710665747291626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte2_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f294d126dbf8f510800000000000000
+      internalID: 1583292166129881846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte2_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0471a38b7017f330800000000000000
+      internalID: 3744479737857274892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte2_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4ede56a87a28990800000000000000
+      internalID: -7385156226076777288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte2_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f3d51999e0a35e0800000000000000
+      internalID: -1929213437643243625
       vertices: []
       indices: 
       edges: []

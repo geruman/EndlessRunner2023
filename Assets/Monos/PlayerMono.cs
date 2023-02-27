@@ -48,6 +48,7 @@ public class PlayerMono : MonoBehaviour
     {
         if (collision.gameObject.layer==7&&!invincible)
         {
+            rb.velocity = new Vector2(-6, 6);
             animator.SetBool("pepsi", true);
         }
 

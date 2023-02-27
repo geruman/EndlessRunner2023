@@ -1,9 +1,13 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
+
+
 
 public class ObstacleSpawner : MonoBehaviour
 {
-    private readonly double DEFAULT_SPAWN_TIME = 5;
+    private readonly double DEFAULT_SPAWN_TIME = 2;
     private double timeTillSpawn;
     [SerializeField] GameObject obstacle1;
     [SerializeField] GameObject obstacle2;
@@ -23,7 +27,7 @@ public class ObstacleSpawner : MonoBehaviour
     }
     void Start()
     {
-        timeTillSpawn = 0;
+        timeTillSpawn = DEFAULT_SPAWN_TIME;
         nextSpawn = new Queue<int>();
     }
 
@@ -31,9 +35,22 @@ public class ObstacleSpawner : MonoBehaviour
     void Update()
     {
         timeTillSpawn -= Time.deltaTime;
-        GetKeyForNextSpawn();
-
+        
+        //GetKeyForNextSpawn();
+        if(timeTillSpawn <= 0)
+        {
+            
+            timeTillSpawn = DEFAULT_SPAWN_TIME;
+            RandomizeAndSpawn();
+        }
     }
+
+    private void RandomizeAndSpawn()
+    {
+        int randomValue = Random.Range(0, 7);
+        SelectForQueue(randomValue);
+    }
+
     private void FixedUpdate()
     {
         //if (timeTillSpawn <= 0)

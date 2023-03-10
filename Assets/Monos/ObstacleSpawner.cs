@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 public class ObstacleSpawner : MonoBehaviour
 {
-    private readonly double DEFAULT_SPAWN_TIME = 2;
+    private readonly float DEFAULT_SPAWN_TIME = 2;
     private double timeTillSpawn;
     [SerializeField] GameObject obstacle1;
     [SerializeField] GameObject obstacle2;
@@ -27,22 +27,16 @@ public class ObstacleSpawner : MonoBehaviour
     }
     void Start()
     {
-        timeTillSpawn = DEFAULT_SPAWN_TIME;
+        
         nextSpawn = new Queue<int>();
+        InvokeRepeating("RandomizeAndSpawn", DEFAULT_SPAWN_TIME, DEFAULT_SPAWN_TIME);
     }
 
     // Update is called once per frame
     void Update()
     {
-        timeTillSpawn -= Time.deltaTime;
-        
-        //GetKeyForNextSpawn();
-        if(timeTillSpawn <= 0)
-        {
+       
             
-            timeTillSpawn = DEFAULT_SPAWN_TIME;
-            RandomizeAndSpawn();
-        }
     }
 
     private void RandomizeAndSpawn()

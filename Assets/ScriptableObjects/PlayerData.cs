@@ -7,4 +7,5 @@ public class PlayerData : ScriptableObject
     public float jumpForce;
     public float doubleJumpForce;
     public float goingDownForce;
+    public float delayForDoubleJumpAndDownActive;
 }

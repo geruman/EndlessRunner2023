@@ -8,4 +8,7 @@ public class PlayerData : ScriptableObject
     public float doubleJumpForce;
     public float goingDownForce;
     public float delayForDoubleJumpAndDownActive;
+    public int playerScore;
+    public string playerId;
+    public string accessToken;
 }

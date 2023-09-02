@@ -655,11 +655,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: eced6c50-0dce-4131-b4ce-86dbad755a29
+  cloudProjectId: b051e610-e981-4157-94f8-55f0040fde0e
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: SkippyVersusTheDessert
-  organizationId: german-3576749
+  projectName: EndlessRunner
+  organizationId: leandrocorrea1989
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   virtualTexturingSupportEnabled: 0

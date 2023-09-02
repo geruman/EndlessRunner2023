@@ -11,6 +11,8 @@ public class PlayerMono : MonoBehaviour
     [SerializeField] private bool invincible;
     [SerializeField] private PlayerData _playerData;
     [SerializeField] private AudioSource _jumpSound;
+    [SerializeField] private ScoreMono _scoreMono;
+    
     AudioSource deathScream;
     bool isDead = false;
     private float _delayForDoubleJumpAndDownActive;
@@ -144,6 +146,7 @@ public class PlayerMono : MonoBehaviour
     }
     public void LoadGameOver()
     {
+        _playerData.playerScore = (int)_scoreMono._score;
         SceneManager.LoadScene(2);
     }
     

@@ -16,3 +16,6 @@ MonoBehaviour:
   doubleJumpForce: 10
   goingDownForce: -10
   delayForDoubleJumpAndDownActive: 0.3
+  playerScore: 100
+  playerId: 
+  accessToken: 

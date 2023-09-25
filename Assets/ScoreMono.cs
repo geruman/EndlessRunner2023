@@ -15,6 +15,6 @@ public class ScoreMono : MonoBehaviour
     void Update()
     {
         _score += Time.deltaTime*5;
-        scoreText.text = ((int)_score).ToString().PadLeft(10, '0');
+        scoreText.text = "Score: "+((int)_score).ToString().PadLeft(10, '0');
     }
 }

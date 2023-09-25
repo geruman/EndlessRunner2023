@@ -4,7 +4,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using UnityEditor.PackageManager.Requests;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
@@ -34,9 +33,18 @@ public class GameOverMono : MonoBehaviour
             gameOverImage.gameObject.SetActive(true);
             gameObject.SetActive(true);
             score.gameObject.SetActive(true);
+            
             updateBehaviour = ReturnToGameScreenBehaviour;
             score.text = $"SCORE: {playerData.playerScore}";
+            StartCoroutine(_waitAndShowHiscores());
         }
+    }
+    private IEnumerator _waitAndShowHiscores()
+    {
+        yield return new WaitForSeconds(1.5f);
+        score.gameObject.SetActive(false);
+        leaderboardMono.gameObject.SetActive(true);
+        leaderboardMono.InitializeLeaderboard(ScoreData.Instance().leaderboard);
     }
 
     private bool IsNewHighScore()

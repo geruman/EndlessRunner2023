@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BasicWiringMono : MonoBehaviour
 {
+    [SerializeField] GameObject loadingText;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,7 @@ public class BasicWiringMono : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Return))
+        if (Input.GetKey(KeyCode.Return)&&(!loadingText.activeInHierarchy))
         {
             SceneManager.LoadScene(1);
         }

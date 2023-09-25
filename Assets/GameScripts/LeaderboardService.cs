@@ -10,8 +10,10 @@ using System;
 
 public class LeaderboardService : MonoBehaviour 
 {
-    private static string URL = "https://endless-runner-leaderboard.onrender.com/leaderboard";
-        //"https://localhost:44367/";
+    //TODO GDB Cambiar endpoint leaderboard acá
+    //private static string URL = "https://endless-runner-leaderboard.onrender.com/leaderboard";
+    private static string URL = "http://localhost:5083/leaderboard";
+    //"https://localhost:44367/";
 
     public static IEnumerator SaveHighScoreAsync(Score score, PlayerData playerData)
     {
